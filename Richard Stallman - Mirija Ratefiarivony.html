@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- Importation des polices d'écritures personnalisés -->
+
+    <!-- Domine -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Stallman - Biographie</title>
+    <style>
+
+        html { /* défilement fluide*/
+            scroll-behavior: smooth;
+        }
+
+        body { /* style général*/
+            font-family: "Domine", serif;
+            font-size: 30px;
+            line-height: 1.6;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 70x;
+            margin-bottom: 70px;
+            background-color: #f9f7f1;
+        }
+        h2 { /* style Titre*/
+            font-family: "Playfair Display", serif;
+            font-variation-settings: 'srff' 50;
+            font-size: 4em;
+            margin-bottom: 0.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            margin-top: 100px;
+            font-weight: 700;
+        }
+
+        h3 { /* style Titre, alternatif*/
+            font-family: "Playfair Display", serif;
+            font-variation-settings: 'srff' 50;
+            font-size: 4em;
+            margin-bottom: 0.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            margin-top: 100px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        strong { /* style <strong>*/
+            color: #34495e;
+        }
+        .reference {
+            font-size: 0.9em;
+            color: gray;
+        }
+        
+        section { /*division de la page en plusieurs sections de la taille de l'écran*/
+            height: 100vh; /* 100% de la hauteur de l'écran */
+            padding: 20px;
+            box-sizing: border-box;
+        }   
+
+        .nav-btn { /* bouton de navigation */
+            position: fixed;
+            bottom: 20px;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            z-index: 1000;
+            background-color:#392b4a;
+            border-radius:25px;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:"Domine",serif;
+            font-size:24px;
+            font-weight:bold;
+            padding:16px 31px;
+        }
+        
+        a { /* lien clickable normalisation */
+            text-decoration: none;
+            color: #191d28;
+        }
+
+        a:hover { /* lien clickable souligné quand on passe dessus */
+            text-decoration: underline;
+        }
+
+        img { /* arrondissement des images */
+            width: 100%;
+            height: 100%;
+            margin-left: 0%;
+            border-radius: 30px;
+        }
+
+        .mirija { /* normalisation du lien mirija */
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        .mirija:hover { /* lien mirija quand on passe dessus */
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        iframe { /* arrondissement du lecteur de vidéo YouTube */
+            width: 100%;
+            height: 100%;
+            margin-left: 0%;
+            border-radius: 30px;
+        }
+
+        #prevBtn { /* bouton precedent */
+            left: 20px;
+        }
+
+        #nextBtn { /* bouton suivant */
+        right: 20px;
+        }
+
+    </style>
+</head>
+<body> 
+    
+    <div class="fullscreen-container">
+
+    <section class="fullscreen-section" id="visionnaire">
+        <h2 class="typewriter">Visionnaire</h2> 
+        <p>
+            <strong>Matthew Stallman</strong>,  né le 16 mars 1953 à Manhattan,
+            est un programmeur et militant du logiciel libre. Il est le fondateur du projet <strong>GNU</strong> 
+            en 1983 et de la <strong>Free Software Foundation</strong> en 1985.</p>
+    </section>
+    
+    <section class="fullscreen-section" id="révolté">
+        <!-- Intégration vidéo YouTube-->
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/PJu9UkokzkY?si=J4DZ6CXILxAnUb_r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+
+    <section class="fullscreen-section" id="innovant">
+        <h3>Révolté</h3>
+        <p>
+            Depuis les années 1990, il consacre la majeure partie de son temps à la 
+            promotion des<strong> logiciels libres</strong> à travers le monde. Il milite activement 
+            contre les <strong>brevets logiciels</strong> et la gestion des droits numériques 
+            <strong>(DRM)</strong>, qu’il considère comme des entraves à la <strong>liberté des utilisateurs</strong>.
+</p>
+    </section>
+
+    <section class="fullscreen-section" id="caca">
+        <h3>Passioné</h3>
+        <p>
+            Stallman a développé plusieurs logiciels influents,
+            dont l’éditeur de texte <strong>GNU Emacs</strong> et le compilateur <strong>GCC</strong>. Il est 
+            également à l’origine de la <strong>licence publique générale GNU (GPL)</strong>, qui permet de garantir
+            la <strong>liberté</strong> d’utilisation, de modification et de distribution
+             des logiciels.
+
+</p>
+    </section>
+
+    <section class="fullscreen-section" id="dévoué">
+        <!-- Image de Stallman en vacance -->
+        <a href="https://youtu.be/Ag1AKIl_2GM?si=LJyZMLZbJ9jeMd2k"><img width="1280" height="720" src="https://i.ibb.co/8YMGNPR/Capture-d-cran-2024-09-18-162615.png" alt="Capture-d-cran-2024-09-18-162615" border="0"></a>
+    </section>
+
+
+    <section class="fullscreen-section" id="influant">
+        <h3>Influant</h3>
+        <p>
+            Grâce à ses efforts, <strong>Stallman</strong> a profondément influencé 
+            la culture informatique et a inspiré de nombreux développeurs à 
+            adopter et promouvoir les principes du <strong>logiciel libre</strong>. </p>
+    </section>
+
+    <button id="prevBtn" class="nav-btn">Précédent</button> <!-- Bouton precedent-->
+    <button id="nextBtn" class="nav-btn">Suivant</button> <!-- Bouton suivant-->
+
+</div>
+
+    <footer>
+        <ol class="reference">
+
+            <!-- Sources-->
+            <li><a href="https://fr.wikipedia.org/wiki/Richard_Stallman">Richard Stallman - Wikipédia.</a></li>
+            <li><a href="https://www.britannica.com/biography/Richard-Stallman">Richard Stallman - Britannica.</a></li>
+            <li><a href="https://www.wikiwand.com/fr/Richard_Stallman">Richard Stallman - Wikiwand.</a></li>
+            <li><a href="https://stallman.org/">Richard Stallman's Personal Page.</a></li>
+            <li><a href="https://fr.vikidia.org/wiki/Richard_Stallman">Richard Stallman - Vikidia.</a></li>
+            <br>
+
+            <!-- L'auteur de la page-->
+            <a href="Richard Stallman - Mirija Ratefiarivony_files\Richard Stallman cursed.html" class="mirija">Mirija.</a></mirija> <a href="https://rentry.co/q9vqivf7"><img style="width: 30px;height: auto; opacity: 30%;" src="https://static.vecteezy.com/system/resources/previews/019/923/719/original/telephone-and-mobile-phone-icon-calling-icon-transparent-background-free-png.png"></a>
+        </ol>
+    </footer>
+
+    <script>
+
+        // JavaScript incompréhensible
+
+        
+        document.addEventListener('DOMContentLoaded', function() {
+        const container = document.querySelector('.fullscreen-container');
+        const sections = document.querySelectorAll('.fullscreen-section');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+    function scrollToSection(index) {
+        if (index < 0) index = 0;
+        if (index >= sections.length) index = sections.length - 1;
+
+        sections[index].scrollIntoView({ behavior: 'smooth' });
+        currentIndex = index;
+        updateButtons();
+    }
+
+    function updateButtons() {
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === sections.length - 1;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        scrollToSection(currentIndex - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        scrollToSection(currentIndex + 1);
+    });
+
+    // Gestion du défilement manuel
+    container.addEventListener('scroll', () => {
+        const scrollPosition = container.scrollTop;
+        currentIndex = Math.round(scrollPosition / window.innerHeight);
+        updateButtons();
+    });
+
+    // Gestion des touches fléchées
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        scrollToSection(currentIndex - 1);
+        } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+        scrollToSection(currentIndex + 1);
+        }
+    });
+
+    //Défilement fluide
+    const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            smoothTouch: false,
+            touchMultiplier: 2,
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                lenis.scrollTo(targetId);
+            });
+        });
+
+    // Initialisation
+    updateButtons();
+    });
+
+    </script>
+
+
+</body>
+</html>
